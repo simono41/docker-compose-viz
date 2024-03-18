@@ -12,6 +12,8 @@
 Considering the current working directory is where your `docker-compose.yml` file is located:
 
 ```bash
+docker build . -t pmsipilot/docker-compose-viz
+
 docker run --rm -it --name dcv -v $(pwd):/input pmsipilot/docker-compose-viz render -m image docker-compose.yml
 
 # PowerShell

@@ -27,7 +27,8 @@ RUN chmod +x /dcv/bin/dcv
 RUN addgroup dcv && \
     adduser -D -G dcv -s /bin/bash -g "docker-compose-viz" -h /input dcv
 
-USER dcv
+#USER dcv
+USER root
 VOLUME /input
 WORKDIR /input
 
